@@ -1,0 +1,8 @@
+CREATE TABLE links (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    original_url VARCHAR(255) NOT NULL UNIQUE,
+    short_url VARCHAR(255) NOT NULL UNIQUE,
+    link_click INT DEFAULT 0,
+    scan_count INT DEFAULT 0,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
